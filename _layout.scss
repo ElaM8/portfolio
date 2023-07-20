@@ -1,0 +1,134 @@
+@use "./base" as *;
+
+body {
+  background-color: $color-background;
+  display: flex;
+  flex-direction: column;
+  font-family: $font-body;
+  color: $color-primary;
+  margin: 23px;
+  nav {
+    .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    font-family: $font-headings;
+    font-weight: $font-weight-bold;
+    font-size: 24px;
+    text-transform: uppercase;
+    text-decoration: none;
+    a {
+      text-decoration: none;
+      &:visited {
+      color: $color-primary;
+      }
+    }
+  }
+  ul {
+    display: none;
+  }
+  }
+  header {
+    h1 {
+      font-family: $font-headings;
+      font-weight: $font-weight-regular;
+      font-size: 80px;
+      width: 344px;
+      margin: auto;
+      margin-top: 108px;
+      margin-bottom: 98px;
+    }
+    p {
+      font-size: 16px;
+      width: 344px;
+    }
+  }
+  #about {
+    margin-top: 71px;
+    display: flex;
+    flex-direction: column;
+    h3 {
+      order: -1;
+      font-family: $font-headings;
+      font-weight: $font-weight-bold;
+      font-size: 32px;
+      text-transform: uppercase;
+    }
+    img {
+      display: block;
+      margin: auto;
+      order: -1;
+      margin-top:69px;
+      width: 330px;
+    }
+    p {
+      margin-top: 69px;
+    }
+  }
+  #skills {
+    display: none;
+  }
+  main {
+    margin-top: 86px;
+    h3 {
+      font-family: $font-headings;
+      font-weight: $font-weight-bold;
+      font-size: 32px;
+      text-transform: uppercase;
+      margin-bottom: 14px;
+    }
+  }
+  #contact {
+    text-align: center;
+    width: 344px;
+    margin: unset;
+    margin: auto;
+    margin-top: 108px;
+    margin-bottom: 98px;
+    h2 {
+    font-family: $font-headings;
+    font-weight: $font-weight-regular;
+    font-size: 80px;
+    margin-bottom: 62px;
+    }
+    a {
+      border: 1px solid $color-primary;
+      padding: 29px 92px 28px;
+      font-size: 18px;
+      text-decoration: none;
+      text-transform: uppercase;
+        &:visited {
+          color: $color-primary;
+      }
+    }
+  }
+  footer {
+    background-color: $color-primary;
+    height: 114px;
+    margin: -25px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    .footer__outer-container--icons {
+      display: flex;
+      justify-content: space-around;
+      width: 210px;
+    }
+        .icon-container {
+          height: 50px;
+          width: 50px;
+          border-radius: 50%;
+          display: flex;
+          justify-content: center;
+          background-color: $color-background;
+        }
+    
+        img {
+          width: 30px;
+          justify-content: center;
+        }
+  }
+  }
+
+
