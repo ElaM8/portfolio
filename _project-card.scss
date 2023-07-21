@@ -1,0 +1,49 @@
+@use "./base" as *;
+
+.project-card {
+  img {
+    display: block;
+    margin: auto;
+    width: 330px;
+    height: 260px;
+  }
+  .project-card-caption {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 330px;  
+    h4 {
+      font-family: $font-headings;
+      font-weight: $font-weight-regular;
+      font-size: 32px;
+      text-transform: uppercase;
+      margin-top: 12px;
+    }
+    .project-icons-container {
+      width: 100px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-around;
+    .icon-container--circle {
+      height: 40px;
+      width: 40px;
+      border-radius: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: $color-primary;
+      
+    }
+      img {
+        width: 20px;
+        height: 20px;
+        justify-content: center;
+      }
+  }
+  .tech-used {
+    display: none;
+  }
+  margin-bottom: 45px;
+}
+}
