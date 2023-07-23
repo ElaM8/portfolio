@@ -133,4 +133,97 @@ body {
   }
   }
 
-
+@media (min-width: 768px) {
+  body {
+    #about,
+    #skills,
+    #portfolio {
+    h3 {
+      font-family: $font-headings;
+      font-weight: $font-weight-bold;
+      text-transform: uppercase;
+      font-size: 48px;
+    }
+  }
+    margin-left: 35px;
+    margin-right: auto;
+    padding: 65px;
+    nav {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      min-width: 768px;
+      .logo {
+        font-size: 48px;
+      }
+      ul {
+        display: flex;
+        justify-content: space-between;
+        min-width: 300px;
+        align-items: center;
+        font-size: 20px;
+        list-style: none;
+      }
+    }
+    header {
+      margin-left: 35px;
+      h1 {
+        font-size: 128px;
+        width: 100%;
+        margin-top: 60px;
+        margin-bottom: 55px;
+        justify-content: left;
+        text-align: left;
+      }
+      p {
+        font-size: 20px;
+        width: 50%;      
+        }
+    }
+    #about {
+      display: flex;
+      h3 {
+        margin-top: 135px;
+      }
+      p {
+        order: -1;
+        width: 63%
+      }
+      img {
+        display: flex;
+        align-self: self-end;
+        margin: unset;
+        margin-top: -200px;
+        width: 33%;
+      }
+    }
+    #skills {
+      margin-top: 127px;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      .skills-container-icons {
+        display: block;
+        margin: auto;
+        img {
+        width: 30px;
+        margin: 15px;
+        }
+      }
+    }
+  
+  #contact{
+    width: auto;
+    h2 {
+    font-size: 128px;
+    padding: 20px
+    }
+  }
+    footer {
+      margin: -125px;
+      margin-top: 100px;
+      width: auto;
+    }
+    }
+    
+  }
