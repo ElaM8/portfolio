@@ -47,3 +47,16 @@
   margin-bottom: 45px;
 }
 }
+
+@media (min-width: 768px) {
+  body main {margin-top: 86px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  h3 {
+    width: 100%;
+  }
+  .project-card {
+  }
+}
