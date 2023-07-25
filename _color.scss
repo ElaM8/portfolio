@@ -1,0 +1,16 @@
+@use "./base" as *;
+
+body nav .logo a {
+  color: $color-tertiary;
+  &:visited {
+    color: $color-tertiary;
+  }
+}
+
+h3 {
+  color: $color-secondary;
+}
+
+.project-card .project-card-caption .project-icons-container .icon-container--circle {
+  background-color: $color-tertiary;
+}

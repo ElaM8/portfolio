@@ -45,16 +45,18 @@ body {
       width: 344px;
     }
   }
+  h3 {
+    font-family: $font-headings;
+      font-weight: $font-weight-bold;
+      font-size: 32px;
+      text-transform: uppercase;
+  }
   #about {
     margin-top: 71px;
     display: flex;
     flex-direction: column;
     h3 {
       order: -1;
-      font-family: $font-headings;
-      font-weight: $font-weight-bold;
-      font-size: 32px;
-      text-transform: uppercase;
     }
     img {
       display: block;
@@ -75,7 +77,6 @@ body {
     h3 {
       font-family: $font-headings;
       font-weight: $font-weight-bold;
-      font-size: 32px;
       text-transform: uppercase;
       margin-bottom: 14px;
     }
@@ -107,7 +108,7 @@ body {
   footer {
     background-color: $color-primary;
     height: 114px;
-    width: auto;
+    width: 111vw;
     margin: -25px;
     display: flex;
     justify-content: space-around;
@@ -135,19 +136,16 @@ body {
 
 @media (min-width: 768px) {
   body {
-    #about,
-    #skills,
-    #portfolio {
     h3 {
       font-family: $font-headings;
       font-weight: $font-weight-bold;
       text-transform: uppercase;
       font-size: 48px;
     }
-  }
-    margin-left: 35px;
-    margin-right: auto;
-    padding: 65px;
+  
+    // margin-left: 35px;
+    // margin-right: auto;
+    // padding: 65px;
     nav {
       display: flex;
       flex-direction: row;
@@ -187,7 +185,8 @@ body {
       }
       p {
         order: -1;
-        width: 63%
+        width: 63%;
+        padding-right: 300px;
       }
       img {
         display: flex;
@@ -211,9 +210,13 @@ body {
         }
       }
     }
+
      main {
       max-width: 1200px;
       align-self: center;
+      #portfolio h3 {
+          background-color: aqua;
+        }
     }
   
     #contact{
@@ -227,6 +230,7 @@ body {
       margin: -125px;
       margin-top: 100px;
       width: auto;
-    }
+      width: 112vw;
     }
   }
+}
